@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
+
+
+body, html { width: 100%; height: 100%;padding: 0px;
+  margin: 0px; }
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior:smooth;
+  
+  }
+::-webkit-scrollbar {
+    display: none;
+    width: 0px; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+  }
+
+
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+    background-image: url(https://images.pexels.com/photos/290660/pexels-photo-290660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:scale-down;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    /* height: 100vh; */
+    background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+/* .content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+} */
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    background-color: #00000063
+    
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+nav ul li:hover{
+  background-color: rgba(253, 253, 253, 0.473);
+  color: #000;
+}
+nav ul li a:hover{
+  /* background-color: rgba(253, 253, 253, 0.473); */
+  color: #000;
+}
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav{
+      z-index: 3;
+    }
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+.Q1{
+  max-width: 100%;
+}
+/* .h1{
+  display: flex;
+  font-size: 16px;
+} */
+
+  /* .secondhalf{
+    display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    .left{
+      display: block;
+      width: 100%;
+    }
+    .container{
+      display: block;
+      width: 100%;
+    }
+.text1 .h2{
+  width: 100%;
+} */
+  }
+  .btn {
+    line-height: 50px;
+    height: 20%;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+  .btn-three {
+    color: rgb(247, 247, 247);
+    
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #00000000;
+    
+    transition: all 0.3s;
+
+  }
+  .btn-three:hover::before {
+    color: rgb(255, 255, 255);
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 2;
+    transition: all 0.3s;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(22, 22, 22, 0.5);
+    transform: scale(1.2,1.2);
+    background-color: rgba(0, 0, 0, 0.651);
+  }
+  .btn-three:hover::after {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transform: scale(1,1);
+  }
+  
+.h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: 'Lavishly Yours', cursive;
+  font-size :10em;
+  color: rgb(255, 230, 0);
+  margin: 0px;
+}
+.h2{
+  font-family: 'Lavishly Yours', cursive;
+  font-size: 6vh;
+  color: rgb(255, 230, 0);
+  margin: 0px;
+}
+.h3{
+  font-family: 'Lavishly Yours', cursive;
+}
+      
+  
+  .firsthalf{
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px;
+    background: rgba(0, 0, 0, 0.295);
+  
+   
+}
+.secondhalf{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    
+}
+.flex{
+  display: flex;
+}
+/* .box{
+  border: solid red;
+} */
+.left{
+  height: 100%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 95%;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  justify-content: center;
+  /* padding: 5%; */
+  /* margin: 5%; */
+  /* -webkit-filter: blur(10px); */
+}
+.right{
+  height: 100%;
+  width: 45%;
+  flex-direction: column;
+}
+.upper{
+  height: 60%;
+}
+.lower{
+  height: 40%;
+}
+.upperright{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.upperleft{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.Q1{ 
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Q2{display: flex;
+  height: 30%;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo img{
+  filter: invert(1);
+  height: 100%;
+  width: 10%;
+}
+
+
+
+.btnx{
+  display: flex;
+  width: 25%;
+  height: 8%;
+  align-items: center;
+  justify-content: center;
+}
+.text1{
+  color: #fff;
+  /* font-size: larger; */
+  margin: 5%;
+}
